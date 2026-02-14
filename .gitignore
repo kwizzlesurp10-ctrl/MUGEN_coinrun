@@ -37,6 +37,9 @@ env/
 *~
 .DS_Store
 
+# Snapshots for AI (local tool files)
+.snapshots/
+
 # Model checkpoints and training artifacts
 checkpoints/**/*.pt
 checkpoints/**/*.pth
