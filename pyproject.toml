@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "musicgen"
+version = "0.1.0"
+description = "Text-to-audio music generation model from scratch"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.1.0",
+    "torchaudio>=2.1.0",
+    "numpy>=1.24.0",
+    "librosa>=0.10.0",
+    "soundfile>=0.12.0",
+    "scipy>=1.11.0",
+    "transformers>=4.36.0",
+    "tokenizers>=0.15.0",
+    "tqdm>=4.66.0",
+    "pydantic>=2.5.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4.0", "pytest-cov>=4.1.0", "wandb>=0.16.0", "hydra-core>=1.3.0"]
+web = ["fastapi>=0.109.0", "uvicorn[standard]>=0.27.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

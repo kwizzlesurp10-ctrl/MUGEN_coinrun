@@ -1,0 +1,44 @@
+# MusicGen-from-scratch config
+# Architecture
+model:
+  # Audio codec (Residual VQ-VAE)
+  codec:
+    sample_rate: 24000
+    hop_length: 320
+    n_fft: 1024
+    n_mels: 80
+    latent_dim: 128
+    n_codebooks: 8
+    codebook_size: 2048
+    n_residual_layers: 3
+
+  # Transformer decoder
+  transformer:
+    d_model: 1024
+    n_heads: 16
+    n_layers: 24
+    d_ff: 4096
+    max_seq_len: 2048
+    dropout: 0.1
+
+  # Text conditioning
+  text:
+    encoder: "t5-base"
+    max_text_len: 512
+
+# Training
+training:
+  batch_size: 8
+  gradient_accumulation: 4
+  learning_rate: 1e-4
+  warmup_steps: 1000
+  max_steps: 100000
+  eval_interval: 1000
+  save_interval: 5000
+  mixed_precision: true
+
+# Agent workflow (iterative refinement)
+agent:
+  enabled: true
+  max_iterations: 3
+  feedback_model: "none"  # none | classifier | llm

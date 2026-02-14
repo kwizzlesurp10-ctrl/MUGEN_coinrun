@@ -1,0 +1,20 @@
+data/demo/demo_000.wav|upbeat electronic dance music with synthesizers
+data/demo/demo_001.wav|chill lo-fi hip hop beats
+data/demo/demo_002.wav|ambient atmospheric pad with soft strings
+data/demo/demo_003.wav|acoustic guitar fingerstyle folk
+data/demo/demo_004.wav|driving rock drums and bass
+data/demo/demo_005.wav|jazzy piano with walking bass
+data/demo/demo_006.wav|minimal techno with deep bass
+data/demo/demo_007.wav|classical piano sonata excerpt
+data/demo/demo_008.wav|reggae rhythm with organ
+data/demo/demo_009.wav|dreamy shoegaze guitar layers
+data/demo/demo_010.wav|upbeat electronic dance music with synthesizers
+data/demo/demo_011.wav|chill lo-fi hip hop beats
+data/demo/demo_012.wav|ambient atmospheric pad with soft strings
+data/demo/demo_013.wav|acoustic guitar fingerstyle folk
+data/demo/demo_014.wav|driving rock drums and bass
+data/demo/demo_015.wav|jazzy piano with walking bass
+data/demo/demo_016.wav|minimal techno with deep bass
+data/demo/demo_017.wav|classical piano sonata excerpt
+data/demo/demo_018.wav|reggae rhythm with organ
+data/demo/demo_019.wav|dreamy shoegaze guitar layers
