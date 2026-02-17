@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Snapshots for AI (local tool files)
+.snapshots/
+
+# Model checkpoints and training artifacts
+checkpoints/**/*.pt
+checkpoints/**/*.pth
+checkpoints/**/*.ckpt
+checkpoints/**/*.safetensors
+saved_models/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+!.keep
+
+# Generated audio files
+output.wav
+output_single.wav
+output/**/*
+!output/.keep
+outputs/
+
+# Demo dataset (generated files)
+data/demo/*.wav
+data/demo/*.mp3
+data/demo/*.flac
+
+# Logs and monitoring
+logs/
+*.log
+wandb/
+tensorboard/
+runs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment
+.env
+.env.local
